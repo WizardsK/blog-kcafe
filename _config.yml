@@ -88,5 +88,4 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repo: git@github.com:sdvdxl/ducafe.github.io.git
-  branch: build
+  repo: git@github.com:sdvdxl/sdvdxl.github.io.git
