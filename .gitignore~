@@ -1,0 +1,5 @@
+.DS_Store
+tmp
+debug.log
+.idea
+.deploy

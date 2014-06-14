@@ -4,12 +4,10 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>a | DuCafe</title>
+    <title>test3 | DuCafe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="sdvdxl">
-    
-    <meta name="description" content="test">
     
     
     
@@ -68,15 +66,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/06/13/a/" title="a" itemprop="url">a</a>
+      <a href="/2014/06/14/test3/" title="test3" itemprop="url">test3</a>
   </h1>
   <p class="article-author">By
     
-      <a href="http://yoursite.com" title="sdvdxl">sdvdxl</a>
+      <a href="http://ducafe.cn" title="sdvdxl">sdvdxl</a>
     </p>
   <p class="article-time">
-    <time datetime="2014-06-13T11:19:08.000Z" itemprop="datePublished">6月 13 2014</time>
-    Updated:<time datetime="2014-06-13T17:10:28.000Z" itemprop="dateModified">6月 14 2014</time>
+    <time datetime="2014-06-14T09:14:59.000Z" itemprop="datePublished">6月 14 2014</time>
+    Updated:<time datetime="2014-06-14T09:14:59.000Z" itemprop="dateModified">6月 14 2014</time>
     
   </p>
 </header>
@@ -85,25 +83,24 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#test"><span class="toc-number">1.</span> <span class="toc-text">test</span></a></li></ol>
+		
 		</div>
 		
-		<h2 id="test">test</h2>
-  
+		  
 	</div>
 		<footer class="article-footer clearfix">
 
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/a/">a</a><a href="/tags/b/">b</a>
-  </div>
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/默认分类/">默认分类</a>
+</div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2014/06/13/a/" data-title="a | DuCafe" data-tsina="sdvdxl.weibo.com" class="share clearfix">
+  <div data-url="http://ducafe.cn/2014/06/14/test3/" data-title="test3 | DuCafe" data-tsina="sdvdxl.weibo.com" class="share clearfix">
   </div>
 
 </div>
@@ -114,9 +111,9 @@
  
 
 <div class="next">
-<a href="/2014/06/13/hello-world/"  title="Hello World">
+<a href="/2014/06/14/test2/"  title="test2">
  <strong>NEXT:</strong><br/> 
- <span>Hello World
+ <span>test2
 </span>
 </a>
 </div>
@@ -146,7 +143,7 @@ var duoshuoQuery = {short_name:"crispelite"};
       
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#test"><span class="toc-number">1.</span> <span class="toc-text">test</span></a></li></ol>
+  
   </div>
 
 <div id="asidepart">
@@ -166,26 +163,24 @@ var duoshuoQuery = {short_name:"crispelite"};
 
 
   
-
-  
-  <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archives</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06">六月 2014</a><span class="archive-list-count">2</span></li></ul>
-  </div>
-
-
-  
-<div class="tagslist">
-	<p class="asidetitle">Tags</p>
-		<ul class="clearfix">
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
 		
-			<li><a href="/tags/a/" title="a">a<sup>1</sup></a></li>
-		
-			<li><a href="/tags/b/" title="b">b<sup>1</sup></a></li>
+			<li><a href="/categories/默认分类/" title="默认分类">默认分类<sup>1</sup></a></li>
 		
 		</ul>
 </div>
 
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/06">六月 2014</a><span class="archive-list-count">4</span></li></ul>
+  </div>
+
+
+  
 
   <div class="linkslist">
   <p class="asidetitle">Links</p>
@@ -349,6 +344,27 @@ $(document).ready(function(){
 </script> 
 
 
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
 
 
 
