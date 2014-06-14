@@ -1,0 +1,38 @@
+date: 2014-06-14 13:16:07.550
+argv: node /usr/local/bin/hexo new new post
+os: Linux 3.13.0-29-generic linux x64
+version:
+  hexo: 2.6.3
+  http_parser: 1.0
+  node: 0.10.28
+  v8: 3.14.5.9
+  ares: 1.9.0-DEV
+  uv: 0.10.27
+  zlib: 1.2.3
+  modules: 11
+  openssl: 1.0.1g
+---
+
+[debug] 13:16:07.336 Processed: draft.md
+[debug] 13:16:07.336 Processed: page.md
+[debug] 13:16:07.336 Processed: photo.md
+[debug] 13:16:07.336 Processed: post.md
+[debug] 13:16:07.336 Config file loaded
+[debug] 13:16:07.338 Version info checked successfully
+[debug] 13:16:07.357 Loading database.
+[debug] 13:16:07.407 Plugin loaded successfully: hexo-renderer-ejs
+[debug] 13:16:07.424 Plugin loaded successfully: hexo-renderer-marked
+[debug] 13:16:07.537 Plugin loaded successfully: hexo-renderer-stylus
+[debug] 13:16:07.539 Script load successfully: fancybox.js
+[error] 13:16:07.544 TypeError: Cannot call method 'replace' of undefined
+TypeError: Cannot call method 'replace' of undefined
+    at Object.exports.parse (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/parser.js:437:19)
+    at parse (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/swig.js:349:19)
+    at Object.precompile (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/swig.js:479:23)
+    at Object.compile (/usr/local/lib/node_modules/hexo/node_modules/swig/lib/swig.js:584:16)
+    at Array.async.auto.content [as 2] (/usr/local/lib/node_modules/hexo/lib/post/create.js:65:28)
+    at listener (/usr/local/lib/node_modules/hexo/node_modules/async/lib/async.js:493:46)
+    at /usr/local/lib/node_modules/hexo/node_modules/async/lib/async.js:444:17
+    at Array.forEach (native)
+    at _each (/usr/local/lib/node_modules/hexo/node_modules/async/lib/async.js:46:24)
+    at Object.taskComplete (/usr/local/lib/node_modules/hexo/node_modules/async/lib/async.js:443:13)
